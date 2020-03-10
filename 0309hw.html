@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HW-0309</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="0309style.css">
+<!-- <style>
+  .wrap{
+    width: 960px;
+    margin: auto;
+    color: #888;
+  }
+  .item-menu{
+    display: flex;
+    justify-content: space-between;
+    background-color: #eee;
+    height: 60px;
+    align-items: center;
+  }
+  .item-menu a{
+    display: block;
+    margin-left: 10px;
+  }
+  .head-menu a{
+    /* background-color: #aaaaaa; */
+    display: inline-block;
+    margin: 0px 5px;
+    text-decoration: none;
+    color: #aaa;
+  }
+  .head-menu a:hover{
+    color: brown;
+  }
+  .item-banner img{
+    width: 100%;
+  }
+  .item-about{
+    text-align: center;
+    background-color: #eee;
+  }
+  .item-title{
+    text-align: center;
+  }
+  /* .item-class{
+    text-align: center;
+  } */
+  #title{
+    display: inline-block;
+    font-size: 22px;
+    margin: 30px 0px;
+    color: #888;
+    
+  }
+  .about-card-group{
+    display: flex;
+    justify-content: center;
+  }
+  .about-card{
+    margin: 20px;
+    /* background-color: #bb1; */
+  }
+  .about-card p{
+    display: inline-block;
+    width: 180px;
+    padding: 10px;
+  }
+  h3{
+    font-size: 25px;
+  }
+  p{
+    line-height: 25px;
+  }
+  .class-card-group{
+    display: flex;
+    justify-content: center;
+  }
+  .class-card{
+    width: 280px;
+    border: 1px solid #eee;
+    margin: 10px 20px;
+  }
+  .class-info{
+    padding: 10px 15px;
+  }
+  .class-card img{
+    width: 100%;
+  }
+  .class-info h3{
+    font-size: 20px;
+    color: #555555;
+    padding: 0px 0px 30px;
+    line-height: 25px;
+  }
+  .class-info p{
+    font-size: 14px;
+    color: #bbb;
+  }
+  .tag-open{
+    background-color: rgb(212, 29, 59);
+    width: 80px;
+    height: 22px;
+    text-align: center;
+    border-radius: 3px;
+    margin: 15px 15px 0px;
+  }
+
+  .tag-open p{
+    font-size: 10px;
+    line-height: 22px;
+    color:#fff;
+  }
+  .class-button{
+    text-align: center;
+  }
+
+  #class-button{
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(212, 29, 59);
+    font-size: 18px;
+    color: #fff;
+    border-radius: 10px;
+    border: 0px;
+    margin: 50px 0px;
+    cursor: pointer;
+  }
+  #class-button:hover{
+    background-color: rgb(187, 30, 56);
+  }
+  .item-command{
+    text-align: center;
+    background-color: #eee;
+    /* height: 350px; */
+  }
+  .command{
+    display: flex;
+    justify-content: center;
+    /* margin: 0px 0px 100px; */
+    /* background-color: #fff; */
+    padding: 50px 0px ;
+
+  }
+  .commad-pic{
+    margin: 0px 20px;
+  }
+  .commad-pic img{
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  .commad-text{
+    width: 500px;
+    text-align: left;
+    /* background-color: #fff; */
+  }
+  .commad-text h3{
+    color: rgb(212, 29, 59);
+    padding: 10px 0px;
+  }
+  .commad-text p:last-child{
+    color: #aaa;
+    font-size: 15px;
+  }
+  .showcase-group{
+    display: flex;
+    justify-content: center;
+  }
+  .card-showcase{
+    width: 400px;
+    margin: 0px 20px;
+    border: 1px solid;
+  }
+  .card-showcase img{
+    width: 100%;
+  }
+  .card-showcase h4{
+    font-size: 20px;
+    padding: 10px;
+  }
+  .card-showcase p{
+    font-size: 14px;
+    padding: 0px 10px 20px 10px;
+  }
+  .more-info{
+    text-align: right;
+    padding: 30px;
+  }
+  .more-info a, .contact-text a{
+    text-decoration: none;
+    color: rgb(212, 29, 59);
+  }
+
+  .item-contact{
+    /* background-color: #bbb; */
+    padding: 40px 0px;
+  }
+  .contact-text{
+    display: flex;
+    justify-content: center;
+  }
+  .contact-text p{
+    display: inline-block;
+    width: 500px;
+    text-align: center;
+    /* background-color: #111111; */
+  }
+  /* .contact-text a{
+    text-decoration: none;
+    
+  } */
+  .contact-pic-group{
+    display: flex;
+    justify-content: center;
+  }
+  .contact-pic{
+    margin: 20px 50px;
+  }
+  .contact-pic img{
+    border-radius: 50%;
+  }
+
+
+
+
+  .item-info{
+    background-color: #eee;
+    display: flex;
+    padding: 30px;
+  }
+
+  .infomation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background-color: #fff; */
+    }
+  .infomation a{
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #333333;
+    }
+
+  .infomation-contact{
+    display: flex;
+    align-items: center;
+  }
+  .contact-us.varify{
+    text-align: center;
+    padding: 20px;
+  }
+  .contact-media img{
+    border-radius: 50%;
+  }
+  .contact-tel h3{
+    color:  rgb(212, 29, 59);
+  }
+  .contact-tel p{
+    font-size: 14px;
+  }
+  .contact-us.address{
+    /* background-color: #fff; */
+    padding: 20px;
+  }
+  .contact-us.address p{
+    font-size: 14px;
+  }
+  .contact-us.address a{
+    text-decoration: none;
+    color: #444444;
+  }
+  .contact-us.address a:hover{
+    color: rgb(212, 29, 59);
+  }
+  .item-copyright{
+      font-size: 12px;
+      text-align: center;
+      background-color: #eee;
+    }
+</style> -->
+</head>
+<body>
+  <div class="wrap">
+    <div class="item-menu">
+        <a href="https://5xruby.tw/">
+          <img src="https://5xruby.tw/assets/images/navbar/logo-c473f739.png" alt="">
+        </a>
+        <nav class="head-menu">
+            <a href="https://iamcoding.tw/" target="blank">線上課程</a>
+            <a href="https://astro.5xruby.tw/" target="blank">ASTRO Camp</a>
+            <a href="https://5xruby.tw/fullstack-landing/">全方位課程</a>
+            <a href="https://5xruby.tw/talks/">短期課程</a>
+            <a href="https://dev.5xruby.tw/">專案開發</a>
+            <a href="https://5xruby.tw/training/">企業代訓</a>
+            <a href="https://5xruby.tw/space/">空間租借</a>
+            <a href="https://5xruby.tw/posts/">最新消息</a>
+        </nav>
+    </div>
+    <div class="item-banner">
+      <a href="https://astro.5xruby.tw/">
+      <img src="https://5xruby.tw/assets/images/index/banner_astro-a839be5c.jpg" alt="">
+    </a>
+    </div>
+    <div class="item-about">
+      <div class="item-title">
+        <h1 id="title">關於五倍紅寶石 About 5xRuby</h1>
+      </div>
+      <div class="red-bar">
+      </div>
+      <div class="about-card-group">
+        <div class="about-card">
+          <a href="https://5xruby.tw/talks/" target="blank">
+            <img src="https://5xruby.tw/assets/images/index/feature-list/feature-list-img1-0d20ab19.png" alt="">
+            <h3>網頁設計前後端課程教學</h3>
+            <p>帶你掌握程式技能轉職工程師，程式課程從入門到進階讓你快速上手，學員好評推薦轉職課程！</p>
+          </a>
+        </div>
+        <div class="about-card">
+          <a href="https://5xruby.tw/showcases/" target="blank">
+            <img src="https://5xruby.tw/assets/images/index/feature-list/feature-list-img2-26e4ca80.png" alt="">
+            <h3>頂尖技術網頁製作、專案開發</h3>
+            <p>網站開發到行動裝置 App 工程服務、系統設計開發甚至系統架設，提供專業的建議與頂尖的技術。</p>
+          </a>
+        </div>
+        <div class="about-card">
+          <a href="https://5xruby.tw/training/" target="blank">
+            <img src="https://5xruby.tw/assets/images/index/feature-list/feature-list-img3-d0a4089e.png" alt="">
+            <h3>資訊軟體開發技術顧問</h3>
+            <p>協助您將現有人力快速打造為 Ruby/Rails 團隊，無須經歷繁瑣的人才招募就有即戰力！</p>
+          </a>
+        </div>
+        <div class="about-card">
+          <a href="https://5xruby.tw/posts/category/activity/" target="blank">
+            <img src="https://5xruby.tw/assets/images/index/feature-list/feature-list-img4-13321bf0.png" alt="">
+            <h3>前後端工程師社群經營</h3>
+            <p>Ruby 社群經營、舉辦各類活動，促進 Ruby 社群發展，歡迎前後端工程師分享交流。</p>
+          </div>
+          </a>
+      </div>
+    </div>
+    <div class="item-class">
+      <div class="item-title">
+        <h1 id="title">熱門網頁設計課程推薦</h1>
+      </div>
+      <div class="red-bar">
+      </div>
+      <div class="class-card-group">
+        <a href="https://5xruby.tw/talks/vue-js/" target="blank">
+          <div class="class-card">
+            <img src="https://5xruby.tw/assets/images/talks/cover/vue-js-61eaa1c7.jpg" alt="">
+            <div class="tag-open">
+              <p>開放報名中</p>
+            </div>
+            <div class="class-info">
+              <h3>Vue.js 與 Vuex 前端開發實戰課程 - 假日班</h3>
+              <p>講師：許國政 (Kuro Hsu)</p>
+            </div>
+            <div class="class-group">
+              <div class="class-start">
+                <p>開課時間</p>
+              </div>
+              <div class="class-time">
+                <p>3月｜假日班</p>
+              </div>
+            </div>
+        </a>
+        </div>
+        <a href="https://5xruby.tw/talks/react-js/" target="blank">
+          <div class="class-card">
+            <img src="https://5xruby.tw/assets/images/talks/cover/react-js-c77f3549.jpg" alt="">
+            <div class="tag-open">
+              <p>開放報名中</p>
+            </div>
+            <div class="class-info">
+              <h3>ReactJS 與 Webpack 全攻略入門班 - 假日班</h3>
+              <p>講師：廖珀均 / 奶綠茶 (Milkmidi)</p>
+            </div>
+            <div class="class-group">
+              <div class="class-start">
+                <p>開課時間</p>
+              </div>
+              <div class="class-time">
+                <p>4月｜假日班</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="https://5xruby.tw/talks/gtm/" target="blank">
+          <div class="class-card">
+            <img src="https://5xruby.tw/assets/images/talks/cover/gtm-48e34654.jpg" alt="">
+            <div class="tag-open">
+              <p>開放報名中</p>
+            </div>
+            <div class="class-info">
+              <h3>Google Tag Manager 數據追蹤碼課程 - 假日班</h3>
+              <p>講師：康晉嵐 (Jason Kang)</p>
+            </div>
+            <div class="class-group">
+              <div class="class-start">
+                <p>開課時間</p>
+              </div>
+              <div class="class-time">
+                <p>5月｜假日班</p>
+              </div>
+            </div>
+        </a>
+        </div>
+      </div>
+      <div class="class-button">
+        <input type="button" value="看更多網頁課程" id="class-button">
+      </div>
+    </div>
+    <div class="item-command">
+      <div class="item-title">
+        <h1 id="title">網頁課程推薦</h1>
+      </div>
+      <div class="red-bar">
+      </div>
+      <div class="command">
+        <div class="commad-pic">
+          <img src="https://5xruby.tw/assets/images/testimoney/avatar/jason-e7e95cad.jpg" alt="">
+        </div>
+        <div class="commad-text">
+          <p>Eddie and his team are of the most dedicated Ruby evangelists I have ever come across. With their passion and professionalism, Ruby learners will leapfrog in their progress.</p>
+          <h3>Jason Hs</h3>
+          <p>founder of The Big Questions & TEDxTaipei</p>
+        </div>
+      </div>
+    </div>
+    <div class="item-showcase">
+      <div class="item-title">
+        <h1 id="title">案例作品 Showcase</h1>
+      </div>
+      <div class="red-bar">
+      </div>
+      <div class="showcase-group">
+        <a href="https://spacenextdoor.com/" target="blank">
+          <div class="card-showcase">
+            <img src="https://5xruby.tw/assets/images/showcases/space_next_door-4dfdfeb6.png" alt="">
+            <h4>Space Next Door</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nihil iure minima voluptatum. Laudantium eius perspiciatis, beatae possimus tenetur aliquid ratione deleniti, qui id, consequuntur aspernatur vero quasi eligendi obcaecati. orem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nihil iure minima voluptatum. Laudantium eius perspiciatis, beatae possimus tenetur aliquid ratione deleniti, qui id, consequuntur aspernatur vero quasi eligendi obcaecati.</p>
+          </div>
+        </a>
+        <a href="https://apps.apple.com/in/app/shopmatic-go/id1174712646" target="blank">
+          <div class="card-showcase">
+            <img src="https://5xruby.tw/assets/images/showcases/shopmatic_go-f7b86d46.png" alt="">
+            <h4>Title</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nihil iure minima voluptatum. Laudantium eius perspiciatis, beatae possimus tenetur aliquid ratione deleniti, qui id, consequuntur aspernatur vero quasi eligendi obcaecati.</p>
+          </div>
+        </a>
+      </div>
+      <div class="more-info">
+        <a href="https://5xruby.tw/showcases/">...更多案例</a>
+      </div>
+    </div>
+    <div class="item-contact">
+      <div class="item-title">
+        <h1 id="title">想更瞭解我們嗎？</h1>
+      </div>
+      <div class="contact-text">
+        <p>您可以看看<a href="https://5xruby.tw/faq/" target="blank">常見問題</a>或者直接<a href="https://5xruby.tw/contacts/" target="blank">線上洽詢</a>，會有親切的客服人員回答您的問題，也可以透過社群網站隨時關注我們的動態。</p>
+      </div>
+      <div class="contact-pic-group">
+        <div class="contact-pic">
+          <img src="https://5xruby.tw/assets/images/index/icon/icon-fb-2f24e7a0.png" alt="">
+        </div>
+        <div class="contact-pic">
+          <img src="https://5xruby.tw/assets/images/index/icon/icon-twitter-89f8d087.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="item-info">
+      <div class="link-out-group">
+        <div class="link-out">
+          <img src="https://fakeimg.pl/200x80/" alt="">
+        </div>
+        <div class="link-out">
+          <img src="https://fakeimg.pl/200x80/" alt="">
+        </div>
+      </div>
+      <div class="info-group">
+        <div class="infomation">
+          <div class="info-links">
+            <a href="https://5xruby.tw/about/" target="blank">關於五倍紅寶石</a>
+          </div>
+          <div class="info-links">
+            <a href="https://5xruby.tw/press/" target="blank">媒體報導</a>
+          </div>
+          <div class="info-links">
+            <a href="https://5xruby.tw/members/" target="blank">團隊成員</a>
+          </div>
+          <div class="info-links">
+            <a href="https://5xruby.tw/contacts/" target="blank">聯絡詢價</a>
+          </div>
+          <div class="info-links">
+            <a href="https://5xruby.tw/faq/" target="blank">常見問題</a>
+          </div>
+          <div class="info-links">
+            <a href="https://5xruby.tw/jobs/" target="blank">工作機會</a>
+          </div>
+          <div class="info-links">
+            <a href="https://github.com/5xRuby" target="blank">開源專案</a>
+          </div>
+          <div class="info-links">
+            <a href="https://5xruby.tw/privacy-policy/" target="blank">隱私權條款</a>
+          </div>
+          <div class="info-links">
+            <a href="https://5xruby.tw/terms-of-service/" target="blank">服務條款</a>
+          </div>
+        </div>
+        <div class="infomation-contact">
+          <div class="contact-us varify">
+            <div class="contact-tel">
+              <h3>02-2331-5247</h3>
+              <p>Mon - Fri / 09:30 - 22:00</p>
+            </div>
+            <div class="contact-media">
+              <img src="https://fakeimg.pl/60x60/" alt="">
+              <img src="https://fakeimg.pl/60x60/" alt="">
+              <img src="https://fakeimg.pl/60x60/" alt="">
+            </div>
+          </div>
+          <div class="contact-us address">
+            <p>有任何問題？</p>
+            <p><a href="hi@5xruby.tw">hi@5xruby.tw</a></p>
+            <p>地址：  <a href="https://www.google.com.tw/maps?q=台北市中正區衡陽路7號5樓" target="blank">10046 台北市中正區衡陽路 7 號 5 樓</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item-copyright">
+      <p>2014 - 2020 五倍紅寶石股份有限公司 (5XRUBY CO., LTD)</p>
+      <p>台北市短期補習班立案 第 7594 號</p>
+    </div>
+  </div>
+
+</body>
+</html>
