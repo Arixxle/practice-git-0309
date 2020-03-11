@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* *{
+      margin: 0;
+      padding: 0;
+    } */
+    .wrap{
+      width: 1200px;
+      display: flex;
+      margin: auto;
+      flex-wrap: wrap;
+    }
+    .item {
+      width: 580px;
+      /* padding: 10px; */
+      /* 高度通常不設定 ，用內容稱高*/
+      border: 1px solid #000;
+      box-sizing: border-box;
+      display: flex;
+      margin: 10px;
+      /* align-items: flex-end; */
+    }
+    .item img{
+      width: 100%;
+      vertical-align: bottom;
+    }
+    .item .pic{
+      width: 50%;
+      padding: 10px;
+    }
+
+    .item .txt{
+      width: 50%;
+      padding: 10px;
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="item">
+      <div class="pic">
+        <img src="https://picsum.photos/300/200?random=1" alt="">
+      </div>
+      <div class="txt">
+        <h3>Title</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum odit cumque perspiciatis</p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="pic">
+        <img src="https://picsum.photos/300/200?random=1" alt="">
+      </div>
+      <div class="txt">
+        <h3>Title</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum odit cumque perspiciatis</p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="pic">
+        <img src="https://picsum.photos/300/200?random=1" alt="">
+      </div>
+      <div class="txt">
+        <h3>Title</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum odit cumque perspiciatis</p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="pic">
+        <img src="https://picsum.photos/300/200?random=1" alt="">
+      </div>
+      <div class="txt">
+        <h3>Title</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum odit cumque perspiciatis</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
