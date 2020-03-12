@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tag_notes</title>
+  <style>
+    /* p {
+      line-height: 10px;
+    } */
+    div{
+      display: inline-block;
+      border: 2px solid #bcd;
+      padding: 10px;
+      margin-bottom: 6px;
+      vertical-align: top;
+      /* height: 100%; */
+    }
+    div p:first-child{
+      color: brown;
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="tag-a">
+    <p>a標籤 - 超連結</p>
+    <a href="http://www.w3school.com.cn">W3School</a>
+  </div>
+  <div>
+  <p>abbr - 定義縮寫</p>
+  The <abbr title="People's Republic of China">PRC</abbr> was founded in 1949.
+  </div>
+  <div>
+    <p>acronym - 定義首字母縮寫</p>
+    <acronym title="World Wide Web">WWW</acronym>
+  </div>
+  <div>
+    <p>address - 地址</p>
+    <address>
+      Written by <a href="arixxle@gmail.com">Joseph Hung</a>.<br> 
+      Visit us at:<br>
+      Example.com<br>
+      Box 564, Disneyland<br>
+      USA
+      </address>
+  </div>
+  <div>
+    <p>area - 框選可以點選的範圍</p>
+    <p>有點複雜，晚點看</p>
+  </div>
+  <div>
+    <article>
+      <p>artical-定義文章</p>
+      <p>不影響外觀</p>
+    </article>
+  </div>
+  <div>
+    <aside>
+      <p>aside-定義內容外之內容</p>
+      <p>不影響外觀</p>
+      </aside>
+  </div>
+  <div>
+    <p>audio-定義聲音內容</p>
+    <p>馬叫聲</p>
+    <audio src="/i/horse.ogg" controls="controls">
+      Your browser does not support the audio element.
+      </audio>
+  </div>
+  <div>
+    <p>b-粗體文字</p>
+    <p>一般文字 - <b>粗體</b>。</p>
+    <p>一般文字 - <tt>等距文字</tt>。</p>
+    <p>一般文字 - <i>斜體</i>。</p>
+    <p>一般文字 - <big>大字</big>。</p>
+    <p>一般文字 - <small>小字</small>。</p>
+  </div>
+  <div>
+    <p>base-定義連結的預設網址</p>
+    <p>必須寫在head中</p>
+    <head>
+      <base href="http://www.w3school.com.cn/i/" />
+      <base target="_blank" />
+      </head>
+      
+      <body>
+      <!-- <img src="eg_smile.gif" /> -->
+      <a href="http://www.w3school.com.cn">W3School</a>
+      </body>
+  </div>
+  <div>
+    <p>bdi-定義文字方向</p>
+    <p dir="ltr">This arabic word <bdi>ARABIC_PLACEHOLDER</bdi> is automatically displayed right-to-left.</p>
+    <p>剛貼上有效，但不知為何失效了...</p>
+
+  </div>
+  <div>
+    <p>bdo-定義文字方向</p>
+    <bdo dir="rtl">
+      Here is some Hebrew text
+      </bdo>
+      <p>	ltr = left tp right</p>
+      <p>rtl = right tp =left</p>
+  </div>
+  <div>
+    <p>blockquote-定義引用，會自動加換行及padding</p>
+    <p>Here comes a long quotation:</p>
+    <blockquote>
+    This is a long quotation. This is a long quotation. This is a long quotation. This is a long quotation. This is a long quotation.
+    </blockquote>
+  </div>
+  <div>
+    <p>br-換行</p>
+    <p>
+      To break<br>lines<br>in a<br>paragraph,<br>use the br tag.
+    </p>
+  </div>
+  <div>
+    <p>button-按鈕</p>
+    <button type="button">Click Me!</button>
+  </div>
+  <div>
+    <p>canvas-畫出色塊，好像要跟.js合用</p>
+    <canvas id="myCanvas">your browser does not support the canvas tag </canvas>
+    <script type="text/javascript">
+    var canvas=document.getElementById('myCanvas');
+    var ctx=canvas.getContext('2d');
+    ctx.fillStyle='#FF0000';
+    ctx.fillRect(0,0,80,100);
+    </script>
+  </div>
+  <div>
+    <p>caption-表格標題</p>
+    <table border="1">
+      <caption>標題</caption>
+      <tr>
+        <td>100</td>
+        <td>200</td>
+        <td>300</td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <p>短語元素，會改變<b>語意</b>及<b>外觀</b></p>
+    <table border="1px solid">
+      <tr>
+        <td>em</td>
+        <td><em>强调</em>的内容。</td>
+      </tr>
+      <tr>
+        <td>strong</td>
+        <td>语气<strong>更强的强调</strong>的内容。</td>
+      </tr>
+      <tr>
+        <td>dfn</td>
+        <td>标记那些对<dfn>特殊术语或短语</dfn>的定义</td>
+      </tr>
+      <tr>
+        <td>code</td>
+        <td>程式碼<code>puts = "Hello, world!"</code>程式碼</td>
+      </tr>
+      <tr>
+        <td>samp</td>
+        <td>定義樣本<samp>ae</samp>不太懂</td>
+      </tr>
+      <tr>
+        <td>kbd</td>
+        <td>键入 <kbd>quit</kbd> 来退出程序，或者键入 <kbd>menu</kbd> 来返回主菜单。</td>
+      </tr>
+      <tr>
+        <td>var</td>
+        <td>不懂</td>
+      </tr>
+      <tr>
+        <td>cite</td>
+        <td>定義<cite>參考引用</cite>範圍</td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <p>col/colgroup-</p>
+    <table border="1">
+      <colgroup>
+        <col span="2" style="background-color:red">
+        <col style="background-color:yellow">
+      </colgroup>
+      <tr>
+        <th>ISBN</th>
+        <th>Title</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>3476896</td>
+        <td>My first HTML</td>
+        <td>$53</td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <p></p>
+  </div>
+  <div>
+    <p></p>
+  </div>
+  <div>
+    <p></p>
+  </div>
+  <div>
+    <p></p>
+  </div>
+  <div>
+    <p></p>
+  </div>
+  <div>
+    <p></p>
+  </div>
+  <div>
+    <p></p>
+  </div>
+  <div>
+    <p></p>
+  </div>
+  <div>
+    <p></p>
+  </div>
+  <div>
+    <p></p>
+  </div>
+  <div>
+    <p></p>
+  </div>
+  <div>
+    <p></p>
+  </div>
+  <div>
+    <p></p>
+  </div>
+  <div>
+    <p></p>
+  </div>
+  <div>
+    <p></p>
+  </div>
+  <div>
+    <p></p>
+  </div>
+  <div>
+    <p></p>
+  </div>
+  <div>
+    <p></p>
+  </div>
+  <div>
+    <p></p>
+  </div>
+  <div>
+    <p></p>
+  </div>
+  <div>
+    <p></p>
+  </div>
+  <div>
+    <p></p>
+  </div>
+  <div>
+    <p></p>
+  </div>
+  <div>
+    <p></p>
+  </div>
+  <div>
+    <p></p>
+  </div>
+  <div>
+    <p></p>
+  </div>
+  <div>
+    <p></p>
+  </div>
+  <div>
+    <p></p>
+  </div>
+  <div>
+    <p></p>
+  </div>
+  <div>
+    <p></p>
+  </div>
+  <div>
+    <p></p>
+  </div>
+  <div>
+    <p></p>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的課表</title>
+  <style>
+    /* * {
+      padding: 0;
+      margin: 0;
+    } */
+    table {
+      text-align: center;
+      width: 100%;
+      border-collapse: collapse;
+    }
+    tr, th, td {
+      border: 2px solid #6fcdda ;
+    }
+    th {
+      height: 30px;
+      background-color: #fed;
+    }
+    td {
+      height: 50px;
+    }
+    tr td:first-child {
+      background-color: #eeffff;
+    }
+    tr td:not(:first-child) {
+      background-color: #fffff1;
+    }
+    #lunch {
+      background-color: #ffddcc;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <caption>我的課表</caption>
+    <thead>
+      <tr>
+        <th>時間</th>
+        <th>星期一</th>
+        <th>星期二</th>
+        <th>星期三</th>
+        <th>星期四</th>
+        <th>星期五</th>
+        <th>星期六</th>
+        <th>星期日</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>0800-0850</td>
+        <td colspan="5">通勤</td>
+        <td colspan="2">補眠</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>0900-0950</td>
+        <td>預習</td>
+        <td rowspan="3">實作課</td>
+        <td colspan="3">預習</td>
+        <td>早餐</td>
+        <td>早餐</td>
+      </tr>
+      <tr>
+        <td>1000-1050</td>
+        <td rowspan="2">HTML</td>
+        <td rowspan="2">HTML</td>
+        <td rowspan="2">Ruby</td>
+        <td rowspan="2">Ruby</td>
+        <td colspan="2" rowspan="2">作業練習</td>
+        
+      </tr>
+    <tr>
+      <td>1100-1150</td>      
+    </tr>
+      <tr>
+        <td>1200-1250</td>
+        <td colspan="7" id="lunch">午餐</td>
+      </tr>
+      <tr>
+        <td>1300-1350</td>
+        <td rowspan="4">HTML</td>
+        <td rowspan="4">實作課</td>
+        <td rowspan="2">HTML</td>
+        <td rowspan="4">Ruby</td>
+        <td rowspan="2">Ruby</td>
+        <td rowspan="2">作業</td>
+        <td>交通</td>
+      </tr>
+      <tr>
+        <td>1400-1450</td>
+        
+        <td rowspan="4">瑜珈</td>
+      </tr>
+      <tr>
+        <td>1500-1550</td>
+        <td rowspan="2">練習</td>
+        <td rowspan="2">練習</td>
+        <td rowspan="3">Ken家</td>
+      </tr>
+      <tr>
+        <td>1600-1650</td>
+      </tr>
+      <tr>
+        <td>1700-1750</td>
+        <td colspan="5">複習</td>
+        
+      </tr>
+      <tr>
+        <td>1800-1850</td>
+        <td colspan="5">助教時間</td>
+        <td colspan="2">交通</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
