@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    p {
+      color: #cc8888;
+      font-size: 20px;
+    }
+    h1 {
+      color: #ccff99;
+      font-size: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>為什麼p不能包div?</h3>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <div>Delectus</div>, iure rerum, harum quod corrupti
+    cumque maiores dolorum autem ad officia ipsum qui similique ea nihil error nobis cupiditate magni consectetur?</p>
+</body>
+<!-- p包div會壞掉，瀏覽器會自動解析補標籤，導致跑版 -->
+
+<h3>表單</h3>
+<form action="">
+  <!-- 寫法一 -->
+  <div>
+    <label>Name:
+      <input type="text">
+    </label>
+  </div>
+  <!-- 寫法二 -->
+  <div>
+    <label for="user_name">Name:</label>
+    <input type="text" id="user_name">
+  </div>
+  <!-- 寫法三 -->
+  <div>
+    <label>Name:</label>
+    <input type="text" id="user_name">
+  </div>
+  <div>
+    <label>搜尋:
+      <input type="search">
+    </label>
+  </div>
+  <div>
+    <label>密碼:
+      <input type="password">
+    </label>
+  </div>
+  <div>
+    <label>電話:
+      <input type="tel">
+    </label>
+  </div>
+  <div>
+    <label>日期:
+      <input type="date">
+    </label>
+  </div>
+    <label>日期:
+      <input type="date">
+    </label>
+  </div>
+  <div>
+    <label>顏色:
+      <input type="color">
+    </label>
+  </div>
+  <div>
+    <label>Range:
+      <input type="range" min="00" max="100">
+    </label>
+    <label>音量:
+      <input type="range" min="00" max="100" value="0" step="20">
+      <!-- value 控制滑桿預設點 step 20 管切分 100/20= 5格 -->
+    </label>
+  </div>
+  <div>
+    <label>興趣：</label>
+      <lable><input type="checkbox">心靈</lable>
+      <lable><input type="checkbox">哲學</lable>
+      <lable><input type="checkbox">成長</lable>
+      <lable><input type="checkbox">財富</lable>
+      <lable><input type="checkbox">健康</lable>
+      <!-- 這就是為什麼不推薦vscode自動折行，因為在這個情境下更好 -->
+  </div>
+  <div>
+    <span>性別:</span>
+    <label>
+      <input type="radio" name="sex">男
+    </label>
+    <label>
+      <input type="radio" name="sex">女
+    </label>
+  </div>
+  <div>
+      <input type="submit">
+      <input type="reset">
+      <input type="button" value="I am a Button.">
+      <button>I am a Button too, but I could revise easily.</button>
+  </div>
+  <div>
+    <label>留言:
+      <textarea name="" id="" cols="30" rows="10">預設顯示文字</textarea>
+    </label>
+  </div>
+  <div>
+    <label>check box:
+      <input type="checkbox">
+    </label>
+  </div>
+</form>
+
+<h1>CSS</h1>
+<p style="color: #ffaaaa; font-size: 20px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, cumque nesciunt non asperiores nemo explicabo dicta fugiat vel maxime cum consectetur magnam quaerat recusandae, doloremque minus minima maiores ipsum nisi.</p>
+<p>Rerum, praesentium. Numquam blanditiis temporibus facilis, eius iure sit animi minus soluta non cum, aperiam ipsam dolorum delectus et! Doloremque libero repellendus provident accusantium sapiente rerum vero earum optio quo!</p>
+<p>Distinctio quaerat amet repellendus culpa voluptate tempora? Corrupti impedit quis, quos soluta enim ipsum! Nulla maxime provident ad suscipit eius quia quisquam. Exercitationem dolor quis officia fuga iusto eius laudantium?</p>
+<p>Fugiat error maxime cupiditate perspiciatis reprehenderit accusamus minus debitis illo a eius, odio dignissimos aliquam provident nostrum laudantium non sit consectetur quidem unde deserunt ipsam nihil natus. Quia, perferendis quam.</p>
+<p>Doloremque sed eveniet pariatur dolorem voluptatem officia repudiandae, maxime dicta. Porro impedit, voluptates illo alias quis nihil soluta consectetur vitae, quas dolore eum voluptate similique totam blanditiis cum odio? Rerum?</p>
+<p>In, praesentium soluta provident quos quasi obcaecati, repellendus, quisquam exercitationem vitae unde laudantium repellat eum deserunt mollitia perspiciatis ipsum impedit vel accusamus aliquam eaque et aspernatur! Ab ipsam in laborum!</p>
+
+
+
+
+
+
+
+
+
+
+</html>

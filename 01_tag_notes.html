@@ -15,6 +15,8 @@
       margin-bottom: 6px;
       vertical-align: top;
       /* height: 100%; */
+      width: 300px;
+      box-sizing: border-box;
     }
     div p:first-child{
       color: brown;
@@ -199,31 +201,73 @@
     </table>
   </div>
   <div>
-    <p></p>
+    <p>command-定义命令按钮，比如单选按钮、复选框或按钮</p>
+    <p>目前所有主流瀏覽器都不支援此功能</p>
   </div>
   <div>
-    <p></p>
+    <p>datalist-下拉選單，與input搭配使用</p>
+    <form action="demo-form.php" method="get">
+      <input list="browsers" name="browser">
+      <datalist id="browsers">
+        <option value="Internet Explorer">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+      </datalist>
+      <input type="submit">
+      </form>
   </div>
   <div>
-    <p></p>
+    <p>*dd-	定义定义列表中项目的描述</p>
+    <p>dl标签定义一个描述列表。dl标签与 dt>（定义项目/名字）和 dd（描述每一个项目/名字）一起使用。</p>
+    <dl>
+      <dt>Coffee</dt>
+      <dd>Black hot drink</dd>
+      <dt>Milk</dt>
+      <dd>White cold drink</dd>
+    </dl>
   </div>
   <div>
-    <p></p>
+    <p>del-刪除線</p>
+    <p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
   </div>
   <div>
-    <p></p>
+    <p>details-有點像toggle，收合/展開資料</p>
+    <details>
+      <summary>Copyright 1999-2011.</summary>
+      <p> - by Refsnes Data. All Rights Reserved.</p>
+      <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+      </details>
+      <p><b>注意：</b>目前，只有 Chrome 和 Safari 6 支持 details 标签。</p>
   </div>
   <div>
-    <p></p>
+    <p>dialog-提示對話框-closing</p>
+      <dialog close>This is an open dialog window，不過不知道怎麼設定位置與跟隨，預設會在畫面正中間</dialog>
+    <p><b>注意：</b>目前只有 Chrome 和 Safari 6 支持 dialog 标签。</p>
   </div>
   <div>
-    <p></p>
+    <p>embed-嵌入外部內容、插件</p>
+    <embed src="helloworld.swf" tppabs="http://www.runoob.com//try/demo_source/helloworld.swf" width="200px">
   </div>
   <div>
-    <p></p>
+    <p>field-將表單內的input欄位分組</p>
+    <form>
+      <fieldset>
+       <legend>Personalia:</legend>
+       Name: <input type="text"><br>
+       Email: <input type="text"><br>
+       Date of birth: <input type="text">
+      </fieldset>
+     </form>
   </div>
   <div>
-    <p></p>
+    <p>figure/figcaption-</p>
+    <p>標示出一段獨立區域的內容，但為什麼會縮排</p>
+    <figure>
+      <img src="https://fakeimg.pl/250x100/" alt="The Pulpit Rock" width="250">
+      <figcaption>Fig.1 - A view of the pulpit rock in Norway.</figcaption>
+    </figure>
   </div>
   <div>
     <p></p>
