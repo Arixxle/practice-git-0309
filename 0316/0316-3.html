@@ -86,7 +86,38 @@
       transform: translateX(100%);
       transition: 1s;
     }
-
+    .card4{
+      position: relative;
+      width: 200px;
+      margin: 30px 0;
+      background-color: #fa0;
+      overflow: hidden;
+    }
+    .card4 img{
+      vertical-align: bottom;
+    }
+    .card4:hover .card-txt4{
+      transform: scale(1) rotate(0deg);
+      opacity: 1;
+      /* top: 0; */
+      /* transform: translateX(0%); */
+    }
+    .card-txt4{
+      width: 90%;
+      height: 100%;
+      background: rgb(0,0,0,.3);
+      color: #fff;
+      position: absolute;
+      top: 10px;
+      /* left: 0; */
+      right: 10px;
+      left: 10px;
+      bottom: 10px;
+      /* margin: auto; */
+      transform: scale(0) rotate(720deg);
+      transition: opacity 1s;
+      opacity: 0;
+    }
 
 
 
@@ -108,6 +139,12 @@
   <div class="card3">
     <img src="https://picsum.photos/200/300?random=3" alt="">
     <div class="card-txt3">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus nam fugiat aliquid?
+      </div>
+  </div>
+  <div class="card4">
+    <img src="https://picsum.photos/200/300?random=4" alt="">
+    <div class="card-txt4">
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus nam fugiat aliquid?
       </div>
   </div>
