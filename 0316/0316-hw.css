@@ -11,12 +11,13 @@ img{
 a{
   text-decoration: none;
 }
-
-/* .room-group{
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-} */
+p, a{
+  font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
 .menu-group{
   position: relative;
 }
@@ -27,13 +28,25 @@ a{
   top: 0;
   background-color: rgb(60, 69, 94,.3);
 }
-
+.logo p{
+  color: #fff;
+  padding-left: 30px;
+}
+.head-link{
+  margin-right: 120px;
+  /* justify-self: flex-start; */ 
+  /* 要把連結置左，有沒有更好的方法？ */
+}
+.head-link a{
+  padding: 0 10px;
+  color: #fff;
+  font-size: 14px;
+}
 .search-icon{
   width: 50px;
   height: 50px;
   background-color: #fa0;
 }
-
 .banner .txt{
   color: #fff;
   position: absolute;
@@ -44,13 +57,53 @@ a{
   bottom: 0;
   margin: auto;
 }
-
-
+.banner{
+  /* min-height: 300px; */
+  /* overflow: hidden; */
+  background-color: #fa0;
+}
+.banner .pic{
+  width: 1000px;
+  height: 400px;
+  overflow: hidden;
+}
+.room-title{
+  width: 100%;
+}
+.room-title h1{
+  font-size: 25px;
+  padding: 30px 15px 0px;
+  font-weight: bold;
+}
 .room-group .item{
   width: 100%;
+  max-width: 400px;
   box-sizing: border-box;
   padding: 15px;
+  margin: auto;
 }
+.room-group .item h3{
+  font-weight: bold;
+  margin: 20px 0;
+}
+.room-group .item a{
+  color: #444;
+}
+.room-group .item a:hover{
+  transition: 0.5s;
+  color: rgb(30, 63, 155);
+}
+.room-group .item p{
+  font-size: 13px;
+  color: #888;
+  margin: 15px 0;
+}
+.room-group .item span{
+  font-size: 16px;
+  color: rgb(30, 63, 155);
+  font-weight: bold;
+}
+
 .info-group{
   width: 100%;
   background-color: #ddd;
@@ -62,7 +115,48 @@ a{
 .info-group .txt{
   width: 100%;
   box-sizing: border-box;
-  padding: 20px;
+  padding: 30px;
+  font-size: 13px;
+  line-height: 18px;
+  color: #888;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.info-group .txt .txt-item{
+  width: 100%;
+  margin-right: 20px;
+  /* background-color: aquamarine; */
+}
+.info-group .txt .txt-item h1{
+  font-size: 20px;
+  color: #444;
+}
+.bar-blue{
+  width: 150px;
+  height: 2px;
+  background-color: rgb(30, 63, 155);
+  margin: 20px 0px;
+}
+.txt-item button{
+  /* width: 180px; */
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 10px 15px;
+  border: 2px solid rgb(30, 63, 155);
+  background-color: rgb(30, 63, 155,0);
+  color: rgb(30, 63, 155);
+  margin: 20px 0 0;
+}
+.txt-item button:hover{
+  cursor: pointer;
+  background-color: rgb(30, 63, 155,1);
+  color: #fff;
+  transition: .5s;
+}
+.info-meal{
+  margin-top: 80px;
 }
 .info-meal .pic{
   width: 100%;
@@ -74,28 +168,76 @@ a{
   width: 100%;
   padding: 10px;
 }
+.info-meal .txt h1{
+  font-size: 20px;
+  color: #444;
+  margin-top: 20px;
+}
+.info-meal .txt h2{
+  font-size: 16px;
+  color: #444;
+  margin: 40px 0 0;
+}
+.info-meal .txt h4{
+  font-size: 15px;
+  color: #444;
+  margin: 20px 0;
+}
+.info-meal p{
+  font-size: 14px;
+  color: #888;
+}
+
 .review-group{
   width: 100%;
-  height: 300px;
-  background-image: url(https://fakeimg.pl/300x200/#555/);
+  height: 230px;
+  background-image: url(pic/asset\ 42.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  background-attachment: fixed;
-  padding: 50px;
+  /* background-attachment: fixed; */
+  padding: 20px;
   color: #fff;
+  margin-top: 20px;
+  box-sizing: border-box;
 }
 .review-group .bar-wt{
-  width: 300px;
-  height: 3px;
+  width: 400px;
+  height: 2px;
   background-color: #fff;
-  margin: 30px 0px;
+  margin: 30px 0px 15px;
 }
+.review-group .txt h2{
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.review-group .txt p{
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+.gallary h1{
+  text-align: center;
+  font-size: 22px;
+  color: #444;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
 .gallary .pic{
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
+  position: relative;
 }
+.gallary .pic-cover{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(33, 61, 138,.5);
+  position: absolute;
+  top: 0;
+}
+
+
 iframe{
   width: 100%;
 }
@@ -140,29 +282,12 @@ iframe{
 .col-md-10{width: 83.333333%;}
 .col-md-11{width: 91.666666%;}
 .col-md-12{width: 100%;} 
-}
+
 .menu-head{
-  /* padding: 20px 0; */
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center;  
 }
-/* .head-link{
-  padding-right: 200px;
-} */
-.logo p{
-  color: #fff;
-  padding-left: 30px;
-}
-
-.head-link a{
-  padding: 0 10px;
-  color: #fff;
-  font-size: 14px;
-}
-
-
-
 .room-group{
   display: flex;
   flex-wrap: wrap;
@@ -171,6 +296,65 @@ iframe{
   /* justify-content: center; */
   margin: auto;
 }
+.room-title{
+  width: 50%;
+}
+
+
+.info-group{
+  display: flex;
+}
+.info-group .pic, .info-group .txt{
+  width: 50%;
+  /* background-color: #fa0; */
+} 
+.info-group .pic{
+  /* height: 500px; */
+  overflow: hidden;
+}
+.info-group .pic img{
+  width: unset;
+  height: 100%;
+}
+.info-group:nth-child(1) .pic{
+  order:1;
+}
+.info-group .txt .txt-item{
+  width: 60%;
+}
+
+.txt-item .bar-blue{
+  width: 50px;
+}
+
+.info-meal{
+  display: flex;
+  justify-content: flex-end;
+}
+.info-meal .pic{
+  width: 60%;
+}
+.info-meal .txt{
+  width: 40%;
+  padding-right: 30px;
+}
+
+.review-group{
+  display: flex;
+  align-items: flex-start;
+  padding: 30px 10px;
+}
+.review-group .bar-wt{
+  width: 160px;
+  margin-top: 30px;
+  margin-right: 50px;
+}
+.review-group .txt h2{
+  font-size: 22px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
 .gallary{
   display: flex;
   flex-wrap: wrap;
@@ -187,10 +371,10 @@ iframe{
   color: #888;
   justify-content: space-between;
 }
-
 .foot-link a{
   color: #888;
   padding: 0 10px;
+}
 }
 
 @media screen and (min-width: 992px){
@@ -207,22 +391,39 @@ iframe{
 .col-lg-11{width: 91.666666%;}
 .col-lg-12{width: 100%;}
 
-.info-group{
-  display: flex;
+.banner .pic{
+width: 100%;
 }
-.info-group .pic, .info-group .txt{
+.banner .pic img{
+  width: 100%;
+}
+.info-group .txt .txt-item{
   width: 50%;
-} 
-.info-group:nth-child(1) .pic{
-  order:1;
-}
-.info-meal{
-  display: flex;
-}
-.review-group{
-  display: flex;
 }
 
+.info-group .txt .txt-item h1{
+  font-size: 25px;
+  line-height: 22px;
+}
+.info-group .txt .txt-item p{
+  font-size: 15px;
+  line-height: 22px;
+}
+.info-group .pic{
+  height: 100%;
+}
+
+.review-group{
+  display: flex;
+  height: 300px;
+  background-attachment: fixed;
+  padding: 80px 20px;
+  color: #fff;
+  margin-top: 80px;
+}
+
+
+}
 
 @media screen and (min-width: 1200px){
 .col-xl-1{width: 8.333333%;}
