@@ -26,16 +26,20 @@ h1, h2, h3{
   position: absolute;
   /* position: relative; */
   top: 0;
-  background-color: rgb(60, 69, 94,.3);
+  /* background-color: rgb(60, 69, 94,.3); */
 }
 .logo p{
   color: #fff;
   padding-left: 30px;
+  margin: 20px 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
 }
 .head-link{
   margin-right: 120px;
   /* justify-self: flex-start; */ 
   /* 要把連結置左，有沒有更好的方法？ */
+  display: none;
 }
 .head-link a{
   padding: 0 10px;
@@ -43,30 +47,38 @@ h1, h2, h3{
   font-size: 14px;
 }
 .search-icon{
-  width: 50px;
-  height: 50px;
-  background-color: #fa0;
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  /* background-color: #fa0; */
 }
 .banner .txt{
   color: #fff;
   position: absolute;
   width: 500px;
-  top: 200px;
+  top: 150px;
   left: 0;
   right: 0;
   bottom: 0;
   margin: auto;
-}
-.banner{
-  /* min-height: 300px; */
-  /* overflow: hidden; */
-  background-color: #fa0;
+  padding: 20px;
 }
 .banner .pic{
   width: 1000px;
   height: 400px;
   overflow: hidden;
+  background-color: #fa0;
 }
+/* .banner .pic img{
+  margin-bottom: 100px;
+} */
+.banner h1{
+  font-size: 25px;
+}
+.banner p{
+  padding: 20px 0;
+}
+
 .room-title{
   width: 100%;
 }
@@ -106,7 +118,7 @@ h1, h2, h3{
 
 .info-group{
   width: 100%;
-  background-color: #ddd;
+  background-color: #eee;
   padding: 0px;
 }
 .info-group .pic{
@@ -122,6 +134,7 @@ h1, h2, h3{
   display: flex;
   justify-content: flex-end;
 }
+
 
 .info-group .txt .txt-item{
   width: 100%;
@@ -227,33 +240,170 @@ h1, h2, h3{
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
+}
+.pic-group{
+  width: 100%;
   position: relative;
 }
 .gallary .pic-cover{
   width: 100%;
   height: 100%;
-  background-color: rgb(33, 61, 138,.5);
+  background-color: rgb(23, 60, 163);
+  opacity: 0;
   position: absolute;
   top: 0;
 }
 
+.gallary .pic-group:hover .pic-cover{
+  opacity: .5;
+  transition: .3s;
+}
+.gallary .pic-group img:last-child{
+  width: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transform: scale(0);
+}
 
+.gallary .pic-group:hover img:last-child{
+  transform: scale(1);
+  transition: .3s;
+}
 iframe{
   width: 100%;
+  margin-top: 80px;
+  vertical-align: bottom;
 }
 
 .contact-group{
-  padding: 50px 0;
-  background-color: rgb(60, 69, 94);
+  padding: 50px 10px;
+  background-color: rgb(54, 59, 73);
   color: #fff;
 }
 .contact-group h2{
-  padding: 10px 0;
+  padding: 20px 10px 0px;
+}
+.contact-group p{
+  padding: 10px;
+  font-size: 14px;
+  color: #888;
+}
+.contact-group a{
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 20px;
+  color: #fff;
+  transition: .3s;
+}
+.contact-group a:hover{
+  color: rgb(36, 81, 206);
+}
+.contact-group input{
+  display: block;
+  margin: 10px;
+}
+.contact-group input[type=email]{
+  width: 90%;
+  background-color: rgb(35, 39, 49);
+  border: none;
+  color: #888;
+  font-size: 16px;
+  padding: 15px;
+  outline:none;
+}
+.contact-group input[type=email]:focus{
+  border: 1px solid red;
+}
+.contact-group input[type=button]{
+  background-color: rgb(15, 57, 163);
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  border: 0;
+  padding: 15px 30px;
+}
+.contact-group input[type=button]:hover{
+  background-color: #fff;
+  color: rgb(15, 57, 163);
+  cursor: pointer;
+}
+.media-group{
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.media-group img{
+  width: 15px;
+  height: 15px;
+
+}
+
+
+
+.menu-foot-group{
+  position: relative;
 }
 .menu-foot{
   padding: 20px 0;
   background-color: #eee;
+  display: none;
 }
+.menu-foot-button{
+  width: 100%;
+}
+.foot-button{
+  width: 45px;
+  height: 40px;
+  /* background-color: #fa0; */
+  margin: auto;
+  box-sizing: border-box;
+  padding: 5px;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+.menu-bar{
+  width: 60%;
+  height: 4px;
+  background-color: #444;
+  margin: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin: 5px; */
+  border-radius: 2px;
+}
+
+.foot-button:hover .menu-bar{
+  background-color: #fff;
+  cursor: pointer;
+}
+.foot-button:hover{
+  background-color: #444;
+  cursor: pointer;
+}
+.foot-button:hover .menu-foot-list{
+  display: block;
+}
+.menu-foot-list{
+  width: 96%;
+  position: fixed;
+  bottom: 55px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: none;
+}
+.menu-foot-list a{
+  display: block;
+  padding: 10px;
+  background-color: #fff;
+}
+
 
 
 .col-1{width: 8.333333%;}
@@ -288,6 +438,22 @@ iframe{
   justify-content: space-between;
   align-items: center;  
 }
+.head-link{
+  display: block;
+}
+.search-icon{
+  width: 20px;
+  height: 20px;
+  margin: 20px;
+}
+
+.banner .txt{
+  width: 60%;
+  top: 100px;
+}
+.banner .txt h1{
+  font-size: 40px;
+}
 .room-group{
   display: flex;
   flex-wrap: wrap;
@@ -321,6 +487,9 @@ iframe{
 }
 .info-group .txt .txt-item{
   width: 60%;
+}
+.info-group:nth-of-type(2) .txt{
+  justify-content: flex-start;
 }
 
 .txt-item .bar-blue{
@@ -375,6 +544,12 @@ iframe{
   color: #888;
   padding: 0 10px;
 }
+.menu-foot-group{
+  display: none;
+}
+
+
+
 }
 
 @media screen and (min-width: 992px){
@@ -390,6 +565,9 @@ iframe{
 .col-lg-10{width: 83.333333%;}
 .col-lg-11{width: 91.666666%;}
 .col-lg-12{width: 100%;}
+.info-group .txt{
+  padding: 40px;
+}
 
 .banner .pic{
 width: 100%;
@@ -402,16 +580,26 @@ width: 100%;
 }
 
 .info-group .txt .txt-item h1{
-  font-size: 25px;
-  line-height: 22px;
+  font-size: 30px;
+  line-height: 30px;
 }
 .info-group .txt .txt-item p{
   font-size: 15px;
   line-height: 22px;
 }
 .info-group .pic{
+  /* height: 500px; */
+  overflow: hidden;
+}
+.info-group .pic img{
+  width: unset;
   height: 100%;
 }
+
+.info-meal .txt h1{
+  font-size: 30px;
+}
+
 
 .review-group{
   display: flex;
